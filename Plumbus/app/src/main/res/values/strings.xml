@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Plumbus</string>
+
+    <string name="new_entry_title">New Entry</string>
+    <string name="new_entry_name">Entry Name</string>
+    <string name="new_entry_name_placeholder">What\'s my name?</string>
+    <string name="new_entry_desc">Description</string>
+    <string name="new_entry_desc_placeholder">What\'s my life\'s story</string>
+    <string name="new_entry_price">Amount</string>
+    <string name="new_entry_create">Create!</string>
+
+</resources>

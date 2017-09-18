@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffcccc</color>
+    <color name="colorPrimaryDark">#ff9999</color>
+    <color name="colorAccent">#ff0066</color>
+    <color name="background">#ffe6e6</color>
+    <color name="primary_text_light">@color/rick_green_dark</color>
+    <color name="secondary_text_light">@color/rick_green_light</color>
+
+
+
+    <color name="rick_light">#e6ffff</color>
+    <color name="rick_dark">#80dfff</color>
+    <color name="rick_green_dark">#669900</color>
+    <color name="rick_green_light">#00cc00</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#00FF00</color>
+    <color name="blue">#0000FF</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+</resources>
