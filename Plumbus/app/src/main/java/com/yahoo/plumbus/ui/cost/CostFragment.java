@@ -22,8 +22,6 @@ public class CostFragment extends BaseFragment{
     private static final String USER1 = "Pie";
     private static final String USER2 = "Mellie";
 
-    private TextView mUserTV;
-    private SwitchCompat mSwitch;
     private EditText mDescriptionET;
     private EditText mNameET;
     private EditText mAmountET;
@@ -42,21 +40,11 @@ public class CostFragment extends BaseFragment{
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         View layout = super.onCreateView(inflater, container, savedInstanceState);
-        mSwitch = (SwitchCompat) layout.findViewById(R.id.user_switch);
-        mUserTV = (TextView) layout.findViewById(R.id.user);
+
         mDescriptionET = (EditText) layout.findViewById(R.id.entry_description);
         mNameET = (EditText) layout.findViewById(R.id.entry_name);
         mAmountET = (EditText) layout.findViewById(R.id.entry_amount);
 
-
-
-        mUserTV.setText(mSwitch.isChecked()? USER2 : USER1);
-        mSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                mUserTV.setText(mSwitch.isChecked()? USER2 : USER1);
-            }
-        });
         return layout;
     }
 

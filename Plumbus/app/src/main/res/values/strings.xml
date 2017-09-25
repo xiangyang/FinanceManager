@@ -7,6 +7,14 @@
     <string name="new_entry_desc">Description</string>
     <string name="new_entry_desc_placeholder">What\'s my life\'s story</string>
     <string name="new_entry_price">Amount</string>
-    <string name="new_entry_create">Create!</string>
+
+    <!--CATEGORIES-->
+    <string name="create_food">FOOD</string>
+    <string name="create_life">LIFE</string>
+    <string name="create_fun">FUN</string>
+    <string name="create_ninja">NINJA</string>
+
+
+
 
 </resources>
