@@ -13,6 +13,8 @@
         <item name="android:textSize">@dimen/txt_small</item>
         <item name="android:keyTextSize">@dimen/txt_small</item>
         <item name="android:buttonStyle">@style/MyButton</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:windowEnableSplitTouch">false</item>
     </style>
 
 
