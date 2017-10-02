@@ -40,13 +40,20 @@ public class ColumnDivideLayout extends ViewGroup {
         }
     }
 
-
+    /**
+     * Current handles vertical scrolling not horizontal
+     * @param widthMeasureSpec
+     * @param heightMeasureSpec
+     */
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         int count = getChildCount();
         int maxWidth = MeasureSpec.getSize(widthMeasureSpec);
         int hSpec = MeasureSpec.getMode(heightMeasureSpec);
         int maxHeight = MeasureSpec.getSize(heightMeasureSpec);
-        if (hSpec == MeasureSpec.AT_MOST) {
+        if (MeasureSpec.getMode(heightMeasureSpec) == MeasureSpec.UNSPECIFIED) {
+            maxHeight = Integer.MAX_VALUE;
+        }
+        if (hSpec != MeasureSpec.EXACTLY) {
             measureChildren(
                     MeasureSpec.makeMeasureSpec(((maxWidth - getPaddingRight() - getPaddingLeft()) / mColumnCount),
                             MeasureSpec.EXACTLY), heightMeasureSpec);
